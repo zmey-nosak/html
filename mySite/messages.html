@@ -2,17 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Page 1</title>
+    <title>Messages</title>
 </head>
 <body>
 <h1 align="center">Messages</h1>
-<ol>
+<ul>
     <li><a href="index.html">Main page</a></li>
     <li><a href="messages.html">Messages</a></li>
     <li><a href="friends.html">Friends</a></li>
     <li><a href="contacts.html">Contacts</a></li>
     <li><a href="login.html">Logout</a></li>
-</ol>
-
+</ul>
+<form action="#">
+    <div>
+        <label for="textareaField">Сообщение:</label>
+        <br>
+        <textarea id="textareaField" cols="60" rows="5" required></textarea>
+        <br>
+        <input type="submit" value="Send message">
+    </div>
+</form>
 </body>
 </html>
