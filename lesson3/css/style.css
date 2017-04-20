@@ -1,0 +1,100 @@
+/*h3 {
+    color: gray;
+}*/
+/*
+селектор{
+#блок объявлений
+свойство1:значение;
+свойство2:значение;
+свойство3:значение1 значение 2;
+}
+
+ селектор + блок объявлений = правило
+ */
+
+/*типы селекторов:
+1. классы => .имя_класса{свойства}
+2. селекторы тегов => тег {свойства}
+3. идентификаторы => #id_тега
+4. контекстные селекторы => .имя_класса тег внутри тега у которого установлен класс*/
+
+/*Классы*/
+.circle {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+/*селектор тегов:*/
+body {
+    background: lightsteelblue;
+}
+
+/*3. идентификаторы*/
+
+#red {
+    background-color: red;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#green {
+    background-color: green;
+}
+
+/*4. контекстные селекторы*/
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.block1, .block2, .block3 {
+    background-color: red;
+}
+
+/*группировка css правил*/
+.block1 {
+    /*background-color: red;*/
+    height: 40px;
+    width: 100px;
+}
+
+.block2 {
+    /*background-color: red;*/
+    width: 200px;
+    height: 100px;
+}
+
+.block3 {
+    /*background-color: red;*/
+    width: 50px;
+    height: 70px;
+
+}
+
+/*наследование*/
+p {
+    font-style: italic;
+}
+
+p.red_text {
+    color: red;
+}
+
+/*типвы значений стилевых свойств*/
+/*1. строка - "значение";
+2. числа - 40,1.4;
+3. проценты  - 40%;
+4. размеры - 40px, 1.3em(предпочтительно), 12pt, 60%;
+5. цвета -#000000, red, rgba (0,0,0,0)
+6. адреса -url(../путь)
+7. ключевые слова - left, top, none...
+*/
