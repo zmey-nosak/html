@@ -1,11 +1,24 @@
 /*@import url(another.css);*/
+
+body {
+    font-size: 100%;
+    background: #F5F5F5;
+}
+
 /*HEADER*/
 header {
     height: 150px;
     border: gray solid;
+
 }
 
 /*END HEADER*/
+
+.wrapper {
+    margin: 0 auto;
+    width: 960px;
+    border: 1px solid blue;
+}
 
 /*MENU*/
 .menu li {
@@ -35,6 +48,7 @@ header {
     left: 0;
     right: 0;
     top: 0;
+    z-index: 2;
 }
 
 /*END MENU*/
@@ -43,6 +57,7 @@ header {
 .slider {
     height: 400px;
     margin-top: 205px;
+    /*opacity: .5;*/
 }
 
 .slider li {
@@ -73,36 +88,45 @@ header {
 
 /*INFO BLOCKS*/
 .info_block {
-    display: inline-block;
-    width: 30%;
+    /*display: inline-block;*/
+    /*width: 30%;*/
     height: 200px;
     border: gray solid;
     background: yellow url(../img/Jellyfish.jpg) no-repeat;
     background-size: contain;
-    margin-left: 30px;
+    /*margin-left: 30px;*/
+    margin: 10px;
+    position: relative;
 }
 
 .news_block {
-    border: gray solid;
-    width: 30%;
-    height: 400px;
-    float: right;
-    margin-right: 30px;
-    background: yellow url(../img/Jellyfish.jpg) no-repeat;
-    background-size: contain;
+     /*border: gray solid;*/
+     /*width: 30%;*/
+     /*height: 400px;*/
+     /*float: right;*/
+     /*margin-right: 30px;*/
+     /*background: yellow url(../img/Jellyfish.jpg) no-repeat;*/
+     /*background-size: contain;*/
 }
 
 /*END INFO BLOCK*/
 
 /*TEXT*/
+
+.cols_text3, .cols_text2 {
+    text-align: justify;
+}
+
 .cols_text3 {
     column-count: 3;
     border: gray solid;
 }
+
 .cols_text2 {
     column-count: 2;
     border: gray solid;
 }
+
 /*END TEXT*/
 
 /*FOOTER*/

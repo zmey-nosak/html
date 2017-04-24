@@ -1,0 +1,111 @@
+/*как задавать отступы - padding*/
+/*.block {*/
+/*padding-top: 10px;*/
+/*padding-right: 10px;*/
+/*padding-bottom: 10px;*/
+/*padding-left: 10px;*/
+
+/*padding: 10px;*/
+
+/*padding: 10px 15px; !*top/bottom right/left*!*/
+/*padding: 10px 15px 20px; !*top right/left bottom*!*/
+/*padding: 10px 15px 20px 25px; !*top right bottom left*!*/
+/*}*/
+
+/* поля - margin */
+/*.block {*/
+/*margin-top: 10px;*/
+/*margin-right: 10px;*/
+/*margin-bottom: 10px;*/
+/*margin-left: 10px;*/
+
+/*margin: 10px;*/
+
+/*margin: 10px 15px; !*top/bottom right/left*!*/
+/*margin: 10px 15px 20px; !*top right/left bottom*!*/
+/*margin: 10px 15px 20px 25px; !*top right bottom left*!*/
+/*}*/
+
+/*.block {*/
+/*!*border: ширина стиль цвет;*!*/
+/*border: 1px dashed red;*/
+/*}*/
+
+/*.block {*/
+/*margin: 40px;*/
+/*padding: 60px;*/
+/*border: 2px solid red;*/
+/*!*border: 2px dotted red;*/
+/*border: 2px dashed red;*/
+/*border: 2px double red;*/
+/*border: 2px inset red;*!*/
+/*height: 300px;*/
+/*width: 400px;*/
+/*}*/
+
+/* фактическая ширина блока = ширина + левый отступ + правый отступ + левое поле + правое поле
+расчёт можно поментя свойством box-sizing
+*/
+
+/*.block1 {*/
+/*!*box-sizing: content-box;*! !*standard*!!* фактическая ширина блока = ширина + левый отступ + правый отступ + левое поле + правое поле*!*/
+/*border-sizing: border-box; !* фактическая ширина блока = ширина + левое поле + правое поле*!*/
+/*}*/
+
+/*.block2 {*/
+/*display: none; !*не заменяет место*!*/
+/*visibility: hidden; !*просто скрывает(прозрачность 100%) место занимает*!*/
+/*visibility: collapse; !*если к блочному элементу = display:none если...*!*/
+/*}*/
+
+/*margin collapse (верхний и нижний)*/
+
+/*1. Побеждает наибольший margin, если разные положительные то суммируется, если отрицательные то накладываются
+  2.
+*/
+
+/*Вёрстка слоями*/
+/*Плавающий элемент*/
+/*float:left |right |none*/
+
+/*1. Плавающий элемент становится блочным
+ 2. в схлопывании не участвует
+ 3. обтекается строчными элементами
+ 4. только по краям распологается*/
+
+.block {
+    background-image: url(../img/Desert.jpg);
+    height: 100px;
+    width: 100px;
+    float: left;
+}
+
+.cl{
+    clear: both;
+}
+/*clear - отменяет обтекание для строчных элементов*/
+
+/*ПЕРЕПОЛНЕНИЕ И overflow*/
+.bord {
+    width: 200px;
+    height: 100px;
+    border: 2px solid red;
+    /*overflow: hidden;*/
+    overflow: scroll;
+    /*overflow: visible;*/
+}
+
+/*ПОЗИЦИОНИРОВАНИЕ*/
+.pos {
+    position: static;/*po umolchaniu v obshem potoke drug za drugom*/
+    position: fixed; /*fiksirovannoe otnositelno okna brauzera*/
+    position: absolute;/*absolutnoe ot blizheishego elementa s position=relative libo ot okna brauzera esli takogo elementa net*/
+    position: relative;/*otnositelno svoei iznachalnoy pozicii*/
+}
+
+/*!*ЗАДАНИЕ КООРДИНАТ*!*/
+/*!*числа проценты авто наследованные*!*/
+/*top:13px;*/
+/*left:2px;*/
+/*right:0;*/
+/*!*bottom:45px*!*/
