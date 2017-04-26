@@ -1,0 +1,42 @@
+
+.column-flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    margin: 60px auto;
+}
+
+.header-login {
+    align-self: center; /*выравнивает по центру*/
+}
+
+.form-control {
+    margin-bottom: 10px;
+    width: auto;
+}
+.link-reg {
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.select-container {
+    display: flex;
+    flex-direction: row;
+    /*margin: 0 auto;*/
+    /*align-items: flex-start;*/
+}
+
+.select-label {
+    flex: 1;
+    align-self: center; /*выравнивает по центру*/
+}
+
+.select-sex {
+    flex: 2;
+}
+.select-country {
+    flex: 2;
+}
+.select-city {
+    flex: 2;
+}

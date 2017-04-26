@@ -3,97 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Registration</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<form action="#">
-    <fieldset>
-        <legend>REGISTRATION</legend>
-        <table>
-            <tr>
-                <td>
-                    <label for="firstName">First Name</label>
-                </td>
-                <td>
-                    <input id="firstName" type="text" required>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="lastName">Last Name</label>
-                </td>
-                <td>
-                    <input id="lastName" type="text" required>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="dobField">Date of birth</label>
-                </td>
-                <td>
-                    <input id="dobField" type="date">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="sexField">Sex</label>
-                </td>
-                <td>
-                    <select id="sexField">
-                        <option value="0"></option>
-                        <option value="1">Male</option>
-                        <option value="2">Female</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="countryField">Country</label>
-                </td>
-                <td>
-                    <select id="countryField">
-                        <option value="0"></option>
-                        <option value="1">Russian</option>
-                        <option value="2">USA</option>
-                    </select>
-                </td>
-            </tr>
-            <tr hidden>
-                <td>
-                    <label for="cityField">City</label>
-                </td>
-                <td>
-                    <select id="cityField">
-                        <option value="0"></option>
-                        <option value="1">Saint-Petersburg</option>
-                        <option value="2">Moscow</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="emailField">Email</label>
-                </td>
-                <td>
-                    <input id="emailField" type="email" required>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="passwordField">Password</label>
-                </td>
-                <td>
-                    <input id="passwordField" type="password" required>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" align="right">
-                    <a href="login.html">Login</a>
-                </td>
-            </tr>
-        </table>
-        <input type="submit" value="Send data">
-        <input type="reset" value="Reset">
-    </fieldset>
-</form>
+<div class="wrapper">
+    <form class="column-flex-container" role="form">
+        <h2 class="header-login">Registration</h2>
+        <input type="text" id="firstName" class="form-control" placeholder="First Name" required autofocus>
+        <input type="text" id="lastName" class="form-control" placeholder="Last Name" required>
+        <input type="text" id="dob" class="form-control" placeholder="Date of birth" required>
+        <div class="select-container">
+            <label class="select-label" for="sexField">Sex</label>
+            <select class="form-control select-sex" id="sexField">
+                <option value="0"></option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+            </select>
+        </div>
+        <div class="select-container">
+            <label class="select-label" for="countryField">Country</label>
+            <select class="form-control select-country" id="countryField">
+                <option value="0"></option>
+                <option value="1">Russian</option>
+                <option value="2">USA</option>
+            </select>
+        </div>
+        <div class=" select-container">
+            <label class="select-label" for="cityField">City</label>
+            <select class="form-control select-city" id="cityField">
+                <option value="0"></option>
+                <option value="1">Saint-Petersburg</option>
+                <option value="2">Moscow</option>
+            </select>
+        </div>
+        <input type="email" class="form-control" placeholder="Email address" required autofocus>
+        <input type="password" class="form-control" placeholder="Password" required>
+        <a class="link-reg" href="login.html">Login</a>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Send</button>
+    </form>
+</div>
 </body>
 </html>
