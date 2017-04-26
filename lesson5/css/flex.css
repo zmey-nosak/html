@@ -1,0 +1,87 @@
+p {
+    background: pink;
+    margin-left: 10px;
+}
+
+/*Выравнивание по горизонтали*/
+.flex-container1 {
+    display: flex;
+    background: plum;
+    /*justify-content: flex-end;*/
+    /*justify-content:center;*/
+    /*justify-content:space-around;*/
+    /*justify-content: space-between;*/
+}
+
+/*Выравнивание по вертикали*/
+.flex-container2 {
+    display: flex;
+    background: plum;
+    align-items: stretch;
+    /*align-items: center;*/
+    /*align-items: flex-end;*/
+    /*align-items: flex-start;*/
+    /*align-items: baseline;*/
+}
+
+/*Выравнивание по вертикали*/
+.flex-container3 {
+    display: flex;
+    background: plum;
+    align-items: stretch;
+    flex-direction: row;
+    /*flex-direction: row-reverse;*/
+    /*flex-direction: column;*/
+    /*flex-direction: column-reverse;*/
+}
+
+/*Выравнивание по вертикали*/
+.flex-container4 {
+    display: flex;
+    background: plum;
+    align-items: stretch;
+    width: 300px;
+    flex-wrap: wrap;
+    /*flex-wrap: wrap-reverse;*/
+    /*flex-wrap: nowrap;*/
+}
+
+/*Выравнивание по вертикали*/
+.flex-container5 {
+    display: flex;
+    background: pink;
+    align-items: stretch;
+    width: 300px;
+    height: 400px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /*align-content: flex-start;*/
+    /*align-content: space-around;*/
+    align-content: space-between;
+}
+
+.flex-container6 {
+    display: flex;
+    background: pink;
+    align-items: stretch;
+    height: 300px;
+}
+
+.order {
+    order: -1;
+}
+
+.flex-basic {
+    flex-basis: 100px;
+    background: lightcyan;
+    /*flex-grow: 3;*//*растяжение*/
+    /*flex-shrink: 2; !*Сужение*!*/
+}
+
+.align-self {
+    align-self: center;
+    background: lightgoldenrodyellow;
+    /*align-self: flex-start;*/
+}
+
+
