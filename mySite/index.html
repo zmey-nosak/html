@@ -3,16 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Main page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<h1 align="center">Main page</h1>
-<ul>
-    <li><a href="index.html">Main page</a></li>
-    <li><a href="messages.html">Messages</a></li>
-    <li><a href="friends.html">Friends</a></li>
-    <li><a href="contacts.html">Contacts</a></li>
-    <li><a href="login.html">Logout</a></li>
-</ul>
+<div class="wrapper">
+    <ul class="nav nav-pills nav-stacked menu-column">
+        <li class="active"><a href="#">Main page</a></li>
+        <li><a href="#">Messages<span class="badge">42</span></a>
+        </li>
+        <li><a href="#">Friends<span class="badge">2</span></a></li>
+        <li><a href="#">Logout</a></li>
+    </ul>
+    <div class="add-content-column">
+        <div class="avatar-class">
+            <img class="img-ava" src="../tstSite/img/Jellyfish.jpg">
+        </div>
+        <div class="change-avatar-class">
+            <button class="btn btn-lg btn-primary btn-block" type="submit">load image</button>
+        </div>
+        <div class="friends-class"></div>
+    </div>
+    <div class="content-column">
 
+    </div>
+
+</div>
 </body>
 </html>

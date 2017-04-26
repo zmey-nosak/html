@@ -14,6 +14,7 @@
     margin-bottom: 10px;
     width: auto;
 }
+
 .link-reg {
     margin-bottom: 10px;
     text-decoration: none;
@@ -34,9 +35,66 @@
 .select-sex {
     flex: 2;
 }
+
 .select-country {
     flex: 2;
 }
+
 .select-city {
     flex: 2;
+}
+
+.wrapper {
+    margin: 20px auto;
+    width: 960px;
+    display: flex;
+}
+
+.menu-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-content: center;
+}
+
+.add-content-column {
+    /*display: flex;*/
+    flex: 2;
+    /*flex-direction: column;*/
+    border: 1px solid blue;
+    height: 600px;
+}
+
+.content-column {
+    display: flex;
+    flex: 4;
+    flex-direction: column;
+    border: 1px solid blue;
+}
+
+.avatar-class {
+    margin: 0 auto;
+}
+
+
+.change-avatar-class{
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.friends-class {
+    display: flex;
+    background: yellow;
+    flex: 5;
+
+}
+
+.img-ava {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+    max-height: 100%;
+    padding: 10px 25px;
+    height: 250px;
 }
