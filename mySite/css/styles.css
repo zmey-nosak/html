@@ -94,14 +94,14 @@ body {
     display: flex;
     /*background-color: white;*/
     flex: 5;
-    border: 1px solid green;
+    /*border: 1px solid green;*/
     flex-direction: row;
 
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
     align-content: flex-start;
-    background-color: #9acfea;
+    background-color: white;
 }
 
 .friend-class {
@@ -126,7 +126,9 @@ body {
     width: 50px;
     height: 50px;
 }
-
+.friend-class>a{
+    align-self: center;
+}
 .img-ava {
     margin: 0 auto;
     width: 100%;
