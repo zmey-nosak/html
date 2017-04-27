@@ -1,3 +1,6 @@
+body {
+    background-color: rgba(237, 238, 240, 1);
+}
 
 .column-flex-container {
     display: flex;
@@ -53,41 +56,75 @@
 .menu-column {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 2;
     align-content: center;
+    /*background-color: white;*/
+    margin-right: 20px;
 }
 
 .add-content-column {
     /*display: flex;*/
-    flex: 2;
+    flex: 3;
     /*flex-direction: column;*/
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     height: 600px;
+    margin-right: 20px;
 }
 
 .content-column {
     display: flex;
-    flex: 4;
+    flex: 6;
     flex-direction: column;
-    border: 1px solid blue;
+    background-color: white;
+    /*border: 1px solid blue;*/
 }
 
 .avatar-class {
     margin: 0 auto;
+    background-color: white;
 }
 
-
-.change-avatar-class{
-    margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
+.change-avatar-class {
+    background-color: white;
+    padding: 10px;
+    margin: 0 auto 20px;
 }
 
-.friends-class {
+.friends-container-class {
     display: flex;
-    background: yellow;
+    /*background-color: white;*/
     flex: 5;
+    border: 1px solid green;
+    flex-direction: row;
 
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-content: flex-start;
+    background-color: #9acfea;
+}
+
+.friend-class {
+    display: inline-flex;
+    flex-direction: column;
+    /*border: 1px solid black;*/
+    margin: 10px;
+    /*width: 50px;*/
+    /*height:50px;*/
+}
+.friend-ava-class{
+    /*border: 1px solid white;*/
+    /*border-radius: 25px;*/
+    /*width: 50px;*/
+    /*height: 50px;*/
+}
+.friend-ava-class>img{
+    margin: 0 auto;
+    max-height: 100%;
+    border: 1px solid;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
 }
 
 .img-ava {
@@ -98,3 +135,8 @@
     padding: 10px 25px;
     height: 250px;
 }
+
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: #E1E4EB;
+}
+
