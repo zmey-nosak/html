@@ -142,6 +142,6 @@ body {
     background-color: #E1E4EB;
 }
 
-.panel-heading{
-    margin: 0 auto;
+.panel-title{
+    align-self: center;
 }
