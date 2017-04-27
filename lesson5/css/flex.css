@@ -50,7 +50,7 @@ p {
 .flex-container5 {
     display: flex;
     background: pink;
-    align-items: stretch;
+
     width: 300px;
     height: 400px;
     flex-wrap: wrap;
@@ -58,6 +58,7 @@ p {
     /*align-content: flex-start;*/
     /*align-content: space-around;*/
     align-content: space-between;
+    align-items: stretch;
 }
 
 .flex-container6 {

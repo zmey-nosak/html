@@ -9,25 +9,73 @@
 <body>
 <div class="wrapper">
     <ul class="nav nav-pills nav-stacked menu-column">
-        <li class="active"><a href="#">Main page</a></li>
-        <li><a href="#">Messages<span class="badge">42</span></a>
+        <li class="active">
+            <a href="#"><span class="glyphicon glyphicon-home"></span> Main page</a>
         </li>
-        <li><a href="#">Friends<span class="badge">2</span></a></li>
-        <li><a href="#">Logout</a></li>
+        <li>
+            <a href="#"><span class="glyphicon glyphicon-list-alt"></span> News</a>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Messages<span
+                class="badge pull-right">42</span></a>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Friends<span
+                class="badge pull-right">2</span></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-globe"></span> Groups<span
+                class="badge pull-right">1</span></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-camera"></span> Photos</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-music"></span> Audio</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-facetime-video"></span> Video</a></li>
+        <li><a href="login.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
     </ul>
     <div class="add-content-column">
         <div class="avatar-class">
             <img class="img-ava" src="../tstSite/img/Jellyfish.jpg">
         </div>
         <div class="change-avatar-class">
-            <button class="btn btn-lg btn-primary btn-block" type="submit">load image</button>
+            <!--<button class="btn btn-lg btn-primary btn-block" type="submit">Load image</button>-->
+            <input id="fileField" type="file">
         </div>
-        <div class="friends-class">f</div>
+
+
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Friends Online</h3>
+            </div>
+            <div class="panel-body">
+
+                <section class="friends-container-class">
+                    <div class="friend-class">
+                        <div class="friend-ava-class">
+                            <img src="../tstSite/img/Jellyfish.jpg">
+                        </div>
+                        <a class="#" href="#">Name</a>
+                    </div>
+                    <div class="friend-class">
+                        <div class="friend-ava-class">
+                            <img src="../tstSite/img/Jellyfish.jpg">
+                        </div>
+                        <a class="#" href="#">Name</a>
+                    </div>
+                    <div class="friend-class">
+                        <div class="friend-ava-class">
+                            <img src="../tstSite/img/Jellyfish.jpg">
+                        </div>
+                        <a class="#" href="#">Name</a>
+                    </div>
+                    <div class="friend-class">
+                        <div class="friend-ava-class">
+                            <img src="../tstSite/img/Jellyfish.jpg">
+                        </div>
+                        <a class="#" href="#">Name</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
     </div>
     <div class="content-column">
-
     </div>
-
 </div>
 </body>
 </html>
