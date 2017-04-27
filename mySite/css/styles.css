@@ -55,39 +55,45 @@
     flex-direction: column;
     flex: 1;
     align-content: center;
+    margin-right: 20px;
+    background-color: #eeeeee;
 }
 
 .add-content-column {
     /*display: flex;*/
     flex: 2;
     /*flex-direction: column;*/
-    border: 1px solid blue;
+
     height: 600px;
+    background-color: #eeeeee;
+    margin-right: 20px;
 }
 
 .content-column {
     display: flex;
     flex: 4;
     flex-direction: column;
-    border: 1px solid blue;
+    /*background-color: #eeeeee;*/
 }
 
 .avatar-class {
     margin: 0 auto;
 }
 
-
-.change-avatar-class{
+.change-avatar-class {
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
+    margin-bottom: 10px;
 }
 
 .friends-class {
     display: flex;
-    background: yellow;
+    background: white;
+    margin-left: 10px;
+    margin-right: 10px;
     flex: 5;
-
+    padding: 10px;
 }
 
 .img-ava {
