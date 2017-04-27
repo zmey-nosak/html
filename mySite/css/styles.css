@@ -101,7 +101,7 @@ body {
     align-items: flex-start;
     justify-content: space-between;
     align-content: flex-start;
-    background-color: white;
+    /*background-color: white;*/
 }
 
 .friend-class {
@@ -142,3 +142,6 @@ body {
     background-color: #E1E4EB;
 }
 
+.panel-heading{
+    margin: 0 auto;
+}
