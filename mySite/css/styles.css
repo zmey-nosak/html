@@ -18,8 +18,12 @@ body {
     width: auto;
 }
 
-.link-reg {
+.links-class {
     margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.links-class:hover {
     text-decoration: none;
 }
 
@@ -62,21 +66,13 @@ body {
     margin-right: 20px;
 }
 
-.add-content-column {
+.additional-content-column {
     /*display: flex;*/
     flex: 3;
     /*flex-direction: column;*/
     /*border: 1px solid blue;*/
     height: 600px;
     margin-right: 20px;
-}
-
-.content-column {
-    display: flex;
-    flex: 6;
-    flex-direction: column;
-    background-color: white;
-    /*border: 1px solid blue;*/
 }
 
 .avatar-class {
@@ -86,11 +82,11 @@ body {
 
 .change-avatar-class {
     background-color: white;
-    padding: 10px;
+    padding: 0 10px 10px;
     margin: 0 auto 20px;
 }
 
-.friends-container-class {
+.friends-container {
     display: flex;
     /*background-color: white;*/
     flex: 5;
@@ -148,26 +144,36 @@ body {
 
 .panel-title {
     align-self: center;
+    text-align: center;
 }
 
-.file-upload > input[type="file"] {
-    display: none;/* скрываем input file */
+.file-upload input[type="file"] {
+
+    display: none; /* скрываем input file */
+
 }
+
+/* задаем стили кнопки выбора файла*/
 
 .file-upload {
     position: relative;
     overflow: hidden;
-    width: 250px;
     height: 40px;
-    background: #4169E1;
+    margin: 0 auto;
+    /*background: #4169E1;*/
+    background-color: #337ab7;
     border-radius: 10px;
     color: #fff;
     text-align: center;
 }
+
 .file-upload:hover {
-    /*background: #1E90FF;*/
+    background: #4169E1;
+    /*background-color: #337ab7;*/
 }
+
 /* Растягиваем label на всю область блока .file-upload */
+
 .file-upload label {
     display: block;
     position: absolute;
@@ -177,8 +183,65 @@ body {
     height: 100%;
     cursor: pointer;
 }
+
 /* стиль текста на кнопке*/
+
 .file-upload span {
     line-height: 40px;
-    font-weight:bold;
+    font-weight: bold;
+}
+
+.content-column {
+    display: flex;
+    flex: 6;
+    flex-direction: column;
+    background-color: white;
+}
+
+.about-me-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px 10px 0;
+}
+
+.name-class {
+
+}
+
+.personal-info-container {
+    display: inline-flex;
+    padding: 10px 0 0;
+    margin: 0 auto 10px;
+}
+
+.personal-info-label {
+    padding-left: 10px;
+    padding-right: 10px;
+    flex: 1
+}
+
+.personal-info-value {
+    padding-left: 10px;
+    padding-right: 10px;
+    flex: 2;
+}
+
+.page-content-info-container {
+    display: inline-flex;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.personal-info-container, .page-content-info-container {
+    border-top: 1px solid #E7E8EC;
+}
+
+.item-page-content-info {
+    flex-wrap: wrap;
+    width: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
