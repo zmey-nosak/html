@@ -1,0 +1,203 @@
+body {
+    font-size: 100%;
+    background-color: #F3F3E6;
+    margin: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1224px;
+}
+
+/* HEADER */
+
+.fixed_block {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    height: 3.5em;
+    background: #D3D3D3;
+}
+
+/* LOGO */
+
+.logo {
+    height: inherit;
+}
+
+/* END OF LOGO */
+
+/* MENU */
+
+.slider {
+    height: 33em;
+    padding: 0;
+    margin: 0;
+}
+
+.slider li {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider .slide1 {
+    background-image: url("../img/slider/slide1.jpg")
+}
+
+.slider .slide2 {
+    background-image: url("../img/slider/slide2.jpg")
+}
+
+.slider .slide3 {
+    background-image: url("../img/slider/slide3.jpg")
+}
+
+.slider li.active {
+    display: block;
+}
+
+footer {
+    height: 6.25em;
+    /*border: gray solid;*/
+    background: #D3D3D3;
+    box-shadow: 0 0 15px gray;
+}
+
+.menu-container {
+    display: block;
+    background-color: white;
+    border: 1px solid #D1D1D1;
+    position: relative;
+    height: 5em;
+}
+
+.link {
+    display: inline-block;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    position: absolute;
+    top: 1em;
+    left: 0;
+}
+
+.menu {
+    display: block;
+    font-size: 1em;
+    font-family: "Arial Black", serif;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 0;
+    position: absolute;
+    top: 1.74em;
+    left: 0;
+}
+
+.menu li {
+    float: left;
+    list-style-type: none;
+    margin-right: 1.2em;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    height: inherit;
+}
+
+.menu li a:hover {
+    color: #53B0D3;
+}
+
+.menu li:active {
+    color: #53B0D3;
+}
+
+.active-menu-link {
+    display: block;
+    color: #53B0D3 !important;
+    padding-bottom: 0.3em;
+    border-bottom: 3px solid #53adc7 !important;
+}
+
+.mailing-row {
+    display: block;
+    margin: 0;
+    height: 8em;
+    background-color: #172838;
+    align-content: center;
+    text-align: center;
+    max-width: 100%;
+}
+
+.mailing-container {
+    display: inline-block;
+    max-width: 570px;
+    text-align: center;
+    width: 100%;
+}
+
+.mailing-header {
+    font-family: "UniversLTStd-Cn", Helvetica, Arial, sans-serif;
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+}
+
+.mail-field-set {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    margin-top: 0;
+}
+
+.mail-field {
+    display: inline-block;
+    vertical-align: bottom;
+    background-color: transparent;
+    color: white;
+    font-family: "UniversLTStd-Cn", Helvetica, Arial, sans-serif;
+    font-size: 18.93px;
+    width: 65%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: white;
+    border-width: 3px;
+}
+
+.mail-submit {
+    font-family: "UniversLTStd-Cn", Helvetica, Arial, sans-serif;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-top: 0;
+    padding: 0.5em;
+    background-color: #53ADC7;
+    text-decoration: none;
+    color: white;
+    width: 30%;
+    text-align: center;
+}
+
+.view-header {
+    background-color: transparent;
+    display: block;
+    width: 100%;
+}
+.view-module-heading{
+    display: inline-block;
+    font-size: 40px;
+    color: #252525;
+    text-transform: uppercase;
+    vertical-align: middle;
+
+}
