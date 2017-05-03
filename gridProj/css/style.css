@@ -96,7 +96,7 @@ body {
 
 /* INFO BLOCKS + NEWSBLOCK */
 
-.info_block {
+.info-block {
     height: 13em;
     border: 1px solid #D3D3D3;
     background-color: white;
@@ -247,7 +247,7 @@ footer {
     /*max-width: 100%;*/
     /*height: auto;*/
     /*}*/
-    .info_block {
+    .info-block {
         margin-left: 0;
         margin-right: 0;
     }
@@ -286,5 +286,8 @@ footer {
     /*.class_name{*/
     /*word-break: break-all;*/
     /*}*/
-
+    .link {
+        font-size: 32.86px;
+        font-family: 'Plantin W01';
+    }
 }
